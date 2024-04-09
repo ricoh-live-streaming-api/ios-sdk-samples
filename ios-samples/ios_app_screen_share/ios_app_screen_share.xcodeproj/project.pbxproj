@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F97E8150DB1DB224CB147E8 /* Pods_ios_app_screen_share_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DEF851803A1002DF162ABA /* Pods_ios_app_screen_share_extension.framework */; };
+		EBB423F42B68B8B600160DEE /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F32B68B8B600160DEE /* AppLogger.swift */; };
+		EBB423F52B68B8B600160DEE /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F32B68B8B600160DEE /* AppLogger.swift */; };
+		EBB423F72B68BF6400160DEE /* AppLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F62B68BF6400160DEE /* AppLogFormatter.swift */; };
+		EBB423F82B68BF6400160DEE /* AppLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F62B68BF6400160DEE /* AppLogFormatter.swift */; };
+		EBB423FA2B68BF7000160DEE /* AppLogFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F92B68BF7000160DEE /* AppLogFileManager.swift */; };
+		EBB423FB2B68BF7000160DEE /* AppLogFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB423F92B68BF7000160DEE /* AppLogFileManager.swift */; };
+		EBCE48732BB12FF70058CEF1 /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB268EBE2BA1957D0092037A /* WebRTC.xcframework */; };
+		EBCE48742BB12FF70058CEF1 /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB268EBE2BA1957D0092037A /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBCE48762BB1305F0058CEF1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCE48752BB1305F0058CEF1 /* Main_iPad.storyboard */; };
+		EBD50AE429E537610092801D /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD50AE329E537610092801D /* AccessToken.swift */; };
+		EBD50AED29E538470092801D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD50AEC29E538470092801D /* Settings.swift */; };
+		EBE29C2129DFE88000D7AC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE29C2029DFE88000D7AC59 /* AppDelegate.swift */; };
+		EBE29C2329DFE88000D7AC59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE29C2229DFE88000D7AC59 /* SceneDelegate.swift */; };
+		EBE29C2829DFE88100D7AC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE29C2629DFE88100D7AC59 /* Main.storyboard */; };
+		EBE29C2A29DFE88300D7AC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE29C2929DFE88300D7AC59 /* Assets.xcassets */; };
+		EBE29C2D29DFE88300D7AC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE29C2B29DFE88300D7AC59 /* LaunchScreen.storyboard */; };
+		EBF864AA2BB16C11009A5E6B /* client_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB268EBD2BA1957D0092037A /* client_sdk.xcframework */; };
+		EBF864AB2BB16C11009A5E6B /* client_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB268EBD2BA1957D0092037A /* client_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBFC32582B1963710098836C /* MappedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC32572B1963710098836C /* MappedFile.swift */; };
+		EBFC32592B1963710098836C /* MappedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC32572B1963710098836C /* MappedFile.swift */; };
+		EBFC325A2B19A1B60098836C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD50AEC29E538470092801D /* Settings.swift */; };
+		EBFCBCB12B049A5700EBEE6F /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFCBCB02B049A5700EBEE6F /* ReplayKit.framework */; };
+		EBFCBCB42B049A5800EBEE6F /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCBCB32B049A5800EBEE6F /* SampleHandler.swift */; };
+		EBFCBCB82B049A5800EBEE6F /* RICOH Live Streaming Client Sample.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBFCBCAF2B049A5700EBEE6F /* RICOH Live Streaming Client Sample.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBFCBCBF2B049A9E00EBEE6F /* MappedFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCBCBE2B049A9E00EBEE6F /* MappedFileManager.swift */; };
+		EBFCBCC02B049A9E00EBEE6F /* MappedFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCBCBE2B049A9E00EBEE6F /* MappedFileManager.swift */; };
+		EBFCBCC22B04B4C400EBEE6F /* LSScreenShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCBCC12B04B4C400EBEE6F /* LSScreenShareViewController.swift */; };
+		F32710211A17BCA096533EB2 /* Pods_ios_app_screen_share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E369EC000B6577DE14CA13C /* Pods_ios_app_screen_share.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBFCBCB62B049A5800EBEE6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE29C1529DFE88000D7AC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFCBCAE2B049A5700EBEE6F;
+			remoteInfo = ios_app_screen_share_extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB268EC32BA1957D0092037A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBCE48742BB12FF70058CEF1 /* WebRTC.xcframework in Embed Frameworks */,
+				EBF864AB2BB16C11009A5E6B /* client_sdk.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFCBCB92B049A5800EBEE6F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBFCBCB82B049A5800EBEE6F /* RICOH Live Streaming Client Sample.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09B052F6F5B34ACD25DADB40 /* Pods-ios_app_screenshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screenshare.release.xcconfig"; path = "Target Support Files/Pods-ios_app_screenshare/Pods-ios_app_screenshare.release.xcconfig"; sourceTree = "<group>"; };
+		0AE8998CB820D300FF3847C5 /* Pods-ios_app_screen_share_extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screen_share_extension.debug.xcconfig"; path = "Target Support Files/Pods-ios_app_screen_share_extension/Pods-ios_app_screen_share_extension.debug.xcconfig"; sourceTree = "<group>"; };
+		83DEF851803A1002DF162ABA /* Pods_ios_app_screen_share_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_app_screen_share_extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E369EC000B6577DE14CA13C /* Pods_ios_app_screen_share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_app_screen_share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B4DD18E30037D7B2E59682 /* Pods-ios_app_screenshare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screenshare.debug.xcconfig"; path = "Target Support Files/Pods-ios_app_screenshare/Pods-ios_app_screenshare.debug.xcconfig"; sourceTree = "<group>"; };
+		BF9A24F9D9F19433D27D5B36 /* Pods-ios_app_screen_share_extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screen_share_extension.release.xcconfig"; path = "Target Support Files/Pods-ios_app_screen_share_extension/Pods-ios_app_screen_share_extension.release.xcconfig"; sourceTree = "<group>"; };
+		D43EE5B724909BB8943C0C50 /* Pods-ios_app_screen_share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screen_share.debug.xcconfig"; path = "Target Support Files/Pods-ios_app_screen_share/Pods-ios_app_screen_share.debug.xcconfig"; sourceTree = "<group>"; };
+		E4024CB01452F812C67F24A7 /* Pods-ios_app_screen_share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screen_share.release.xcconfig"; path = "Target Support Files/Pods-ios_app_screen_share/Pods-ios_app_screen_share.release.xcconfig"; sourceTree = "<group>"; };
+		EB268EBD2BA1957D0092037A /* client_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = client_sdk.xcframework; path = ../../Frameworks/client_sdk.xcframework; sourceTree = "<group>"; };
+		EB268EBE2BA1957D0092037A /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = ../../Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
+		EBB423F32B68B8B600160DEE /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		EBB423F62B68BF6400160DEE /* AppLogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogFormatter.swift; sourceTree = "<group>"; };
+		EBB423F92B68BF7000160DEE /* AppLogFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogFileManager.swift; sourceTree = "<group>"; };
+		EBCE48752BB1305F0058CEF1 /* Main_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		EBCEB0AE56AAB15344B41719 /* Pods-ios_app_screenshare_extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screenshare_extension.debug.xcconfig"; path = "Target Support Files/Pods-ios_app_screenshare_extension/Pods-ios_app_screenshare_extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD50AE329E537610092801D /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		EBD50AEC29E538470092801D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBD8988C2B171879003F18EF /* Config.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.debug.xcconfig; sourceTree = "<group>"; };
+		EBD8988F2B17188A003F18EF /* Config.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.release.xcconfig; sourceTree = "<group>"; };
+		EBE29C1D29DFE88000D7AC59 /* ios_app_screen_share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_app_screen_share.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE29C2029DFE88000D7AC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBE29C2229DFE88000D7AC59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBE29C2729DFE88100D7AC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBE29C2929DFE88300D7AC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE29C2C29DFE88300D7AC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBE29C2E29DFE88300D7AC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFC32572B1963710098836C /* MappedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappedFile.swift; sourceTree = "<group>"; };
+		EBFCBCAF2B049A5700EBEE6F /* RICOH Live Streaming Client Sample.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RICOH Live Streaming Client Sample.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFCBCB02B049A5700EBEE6F /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		EBFCBCB32B049A5800EBEE6F /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		EBFCBCB52B049A5800EBEE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFCBCBE2B049A9E00EBEE6F /* MappedFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappedFileManager.swift; sourceTree = "<group>"; };
+		EBFCBCC12B04B4C400EBEE6F /* LSScreenShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSScreenShareViewController.swift; sourceTree = "<group>"; };
+		EBFCBCC32B05983D00EBEE6F /* ios_app_screen_share_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ios_app_screen_share_extension.entitlements; sourceTree = "<group>"; };
+		EBFCBCC42B05989000EBEE6F /* ios_app_screen_share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ios_app_screen_share.entitlements; sourceTree = "<group>"; };
+		FB2D07A4D61880964B87B73F /* Pods-ios_app_screenshare_extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_app_screenshare_extension.release.xcconfig"; path = "Target Support Files/Pods-ios_app_screenshare_extension/Pods-ios_app_screenshare_extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBE29C1A29DFE88000D7AC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF864AA2BB16C11009A5E6B /* client_sdk.xcframework in Frameworks */,
+				F32710211A17BCA096533EB2 /* Pods_ios_app_screen_share.framework in Frameworks */,
+				EBCE48732BB12FF70058CEF1 /* WebRTC.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFCBCAC2B049A5700EBEE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFCBCB12B049A5700EBEE6F /* ReplayKit.framework in Frameworks */,
+				3F97E8150DB1DB224CB147E8 /* Pods_ios_app_screen_share_extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3D167FD86FD560C347B413F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B4DD18E30037D7B2E59682 /* Pods-ios_app_screenshare.debug.xcconfig */,
+				09B052F6F5B34ACD25DADB40 /* Pods-ios_app_screenshare.release.xcconfig */,
+				EBCEB0AE56AAB15344B41719 /* Pods-ios_app_screenshare_extension.debug.xcconfig */,
+				FB2D07A4D61880964B87B73F /* Pods-ios_app_screenshare_extension.release.xcconfig */,
+				D43EE5B724909BB8943C0C50 /* Pods-ios_app_screen_share.debug.xcconfig */,
+				E4024CB01452F812C67F24A7 /* Pods-ios_app_screen_share.release.xcconfig */,
+				0AE8998CB820D300FF3847C5 /* Pods-ios_app_screen_share_extension.debug.xcconfig */,
+				BF9A24F9D9F19433D27D5B36 /* Pods-ios_app_screen_share_extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBB423F02B68B89C00160DEE /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				EBB423F32B68B8B600160DEE /* AppLogger.swift */,
+				EBB423F62B68BF6400160DEE /* AppLogFormatter.swift */,
+				EBB423F92B68BF7000160DEE /* AppLogFileManager.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		EBD50AE529E537AD0092801D /* AccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				EBD50AE329E537610092801D /* AccessToken.swift */,
+			);
+			path = AccessToken;
+			sourceTree = "<group>";
+		};
+		EBE29C1429DFE88000D7AC59 = {
+			isa = PBXGroup;
+			children = (
+				EBD8988F2B17188A003F18EF /* Config.release.xcconfig */,
+				EBD8988C2B171879003F18EF /* Config.debug.xcconfig */,
+				EBFCBCBD2B049A7A00EBEE6F /* shared */,
+				EBE29C1F29DFE88000D7AC59 /* ios_app_screen_share */,
+				EBFCBCB22B049A5800EBEE6F /* ios_app_screen_share_extension */,
+				EBE29C1E29DFE88000D7AC59 /* Products */,
+				EBE29C3B29DFE97B00D7AC59 /* Frameworks */,
+				E3D167FD86FD560C347B413F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE29C1E29DFE88000D7AC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE29C1D29DFE88000D7AC59 /* ios_app_screen_share.app */,
+				EBFCBCAF2B049A5700EBEE6F /* RICOH Live Streaming Client Sample.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE29C1F29DFE88000D7AC59 /* ios_app_screen_share */ = {
+			isa = PBXGroup;
+			children = (
+				EBFCBCC42B05989000EBEE6F /* ios_app_screen_share.entitlements */,
+				EBD50AE529E537AD0092801D /* AccessToken */,
+				EBE29C2029DFE88000D7AC59 /* AppDelegate.swift */,
+				EBE29C2229DFE88000D7AC59 /* SceneDelegate.swift */,
+				EBFCBCC12B04B4C400EBEE6F /* LSScreenShareViewController.swift */,
+				EBE29C2629DFE88100D7AC59 /* Main.storyboard */,
+				EBCE48752BB1305F0058CEF1 /* Main_iPad.storyboard */,
+				EBE29C2929DFE88300D7AC59 /* Assets.xcassets */,
+				EBE29C2B29DFE88300D7AC59 /* LaunchScreen.storyboard */,
+				EBE29C2E29DFE88300D7AC59 /* Info.plist */,
+			);
+			path = ios_app_screen_share;
+			sourceTree = "<group>";
+		};
+		EBE29C3B29DFE97B00D7AC59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB268EBD2BA1957D0092037A /* client_sdk.xcframework */,
+				EB268EBE2BA1957D0092037A /* WebRTC.xcframework */,
+				EBFCBCB02B049A5700EBEE6F /* ReplayKit.framework */,
+				8E369EC000B6577DE14CA13C /* Pods_ios_app_screen_share.framework */,
+				83DEF851803A1002DF162ABA /* Pods_ios_app_screen_share_extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBFCBCB22B049A5800EBEE6F /* ios_app_screen_share_extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBFCBCC32B05983D00EBEE6F /* ios_app_screen_share_extension.entitlements */,
+				EBFCBCB32B049A5800EBEE6F /* SampleHandler.swift */,
+				EBFCBCB52B049A5800EBEE6F /* Info.plist */,
+			);
+			path = ios_app_screen_share_extension;
+			sourceTree = "<group>";
+		};
+		EBFCBCBD2B049A7A00EBEE6F /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				EBB423F02B68B89C00160DEE /* Log */,
+				EBD50AEC29E538470092801D /* Settings.swift */,
+				EBFCBCBE2B049A9E00EBEE6F /* MappedFileManager.swift */,
+				EBFC32572B1963710098836C /* MappedFile.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBE29C1C29DFE88000D7AC59 /* ios_app_screen_share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE29C3129DFE88300D7AC59 /* Build configuration list for PBXNativeTarget "ios_app_screen_share" */;
+			buildPhases = (
+				570EE9589E9D309F6CA420F2 /* [CP] Check Pods Manifest.lock */,
+				EBE29C1929DFE88000D7AC59 /* Sources */,
+				EBE29C1A29DFE88000D7AC59 /* Frameworks */,
+				EBE29C1B29DFE88000D7AC59 /* Resources */,
+				EBFCBCB92B049A5800EBEE6F /* Embed Foundation Extensions */,
+				BCCE37977640FDEDC8F90A46 /* [CP] Embed Pods Frameworks */,
+				EB268EC32BA1957D0092037A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBFCBCB72B049A5800EBEE6F /* PBXTargetDependency */,
+			);
+			name = ios_app_screen_share;
+			productName = ios_app_screen_share;
+			productReference = EBE29C1D29DFE88000D7AC59 /* ios_app_screen_share.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBFCBCAE2B049A5700EBEE6F /* ios_app_screen_share_extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFCBCBC2B049A5800EBEE6F /* Build configuration list for PBXNativeTarget "ios_app_screen_share_extension" */;
+			buildPhases = (
+				02A2B02C5F184C079A687166 /* [CP] Check Pods Manifest.lock */,
+				EBFCBCAB2B049A5700EBEE6F /* Sources */,
+				EBFCBCAC2B049A5700EBEE6F /* Frameworks */,
+				EBFCBCAD2B049A5700EBEE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios_app_screen_share_extension;
+			productName = ios_app_screen_share_extension;
+			productReference = EBFCBCAF2B049A5700EBEE6F /* RICOH Live Streaming Client Sample.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE29C1529DFE88000D7AC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EBE29C1C29DFE88000D7AC59 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EBFCBCAE2B049A5700EBEE6F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = EBE29C1829DFE88000D7AC59 /* Build configuration list for PBXProject "ios_app_screen_share" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE29C1429DFE88000D7AC59;
+			productRefGroup = EBE29C1E29DFE88000D7AC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE29C1C29DFE88000D7AC59 /* ios_app_screen_share */,
+				EBFCBCAE2B049A5700EBEE6F /* ios_app_screen_share_extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE29C1B29DFE88000D7AC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE29C2D29DFE88300D7AC59 /* LaunchScreen.storyboard in Resources */,
+				EBCE48762BB1305F0058CEF1 /* Main_iPad.storyboard in Resources */,
+				EBE29C2A29DFE88300D7AC59 /* Assets.xcassets in Resources */,
+				EBE29C2829DFE88100D7AC59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFCBCAD2B049A5700EBEE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A2B02C5F184C079A687166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios_app_screen_share_extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570EE9589E9D309F6CA420F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios_app_screen_share-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCE37977640FDEDC8F90A46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_app_screen_share/Pods-ios_app_screen_share-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_app_screen_share/Pods-ios_app_screen_share-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_app_screen_share/Pods-ios_app_screen_share-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE29C1929DFE88000D7AC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFCBCC22B04B4C400EBEE6F /* LSScreenShareViewController.swift in Sources */,
+				EBB423F42B68B8B600160DEE /* AppLogger.swift in Sources */,
+				EBE29C2129DFE88000D7AC59 /* AppDelegate.swift in Sources */,
+				EBFC32582B1963710098836C /* MappedFile.swift in Sources */,
+				EBD50AED29E538470092801D /* Settings.swift in Sources */,
+				EBB423FA2B68BF7000160DEE /* AppLogFileManager.swift in Sources */,
+				EBB423F72B68BF6400160DEE /* AppLogFormatter.swift in Sources */,
+				EBE29C2329DFE88000D7AC59 /* SceneDelegate.swift in Sources */,
+				EBD50AE429E537610092801D /* AccessToken.swift in Sources */,
+				EBFCBCBF2B049A9E00EBEE6F /* MappedFileManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFCBCAB2B049A5700EBEE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFC32592B1963710098836C /* MappedFile.swift in Sources */,
+				EBB423FB2B68BF7000160DEE /* AppLogFileManager.swift in Sources */,
+				EBB423F52B68B8B600160DEE /* AppLogger.swift in Sources */,
+				EBFCBCC02B049A9E00EBEE6F /* MappedFileManager.swift in Sources */,
+				EBB423F82B68BF6400160DEE /* AppLogFormatter.swift in Sources */,
+				EBFC325A2B19A1B60098836C /* Settings.swift in Sources */,
+				EBFCBCB42B049A5800EBEE6F /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBFCBCB72B049A5800EBEE6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFCBCAE2B049A5700EBEE6F /* ios_app_screen_share_extension */;
+			targetProxy = EBFCBCB62B049A5800EBEE6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBE29C2629DFE88100D7AC59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE29C2729DFE88100D7AC59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBE29C2B29DFE88300D7AC59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE29C2C29DFE88300D7AC59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBE29C2F29DFE88300D7AC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43EE5B724909BB8943C0C50 /* Pods-ios_app_screen_share.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBE29C3029DFE88300D7AC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4024CB01452F812C67F24A7 /* Pods-ios_app_screen_share.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBE29C3229DFE88300D7AC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD8988C2B171879003F18EF /* Config.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ios_app_screen_share/ios_app_screen_share.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "${inherited}";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ios_app_screen_share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "RICOH Live Streaming Client Screen Share Sample";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricoh.livestreaming.app.ios-app-screen-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBE29C3329DFE88300D7AC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD8988F2B17188A003F18EF /* Config.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ios_app_screen_share/ios_app_screen_share.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "${inherited}";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ios_app_screen_share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "RICOH Live Streaming Client Screen Share Sample";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricoh.livestreaming.app.ios-app-screen-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBFCBCBA2B049A5800EBEE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD8988C2B171879003F18EF /* Config.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ios_app_screen_share_extension/ios_app_screen_share_extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "${inherited}";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ios_app_screen_share_extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "RICOH Live Streaming Client Screen Share Sample";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricoh.livestreaming.app.ios-app-screen-share.ios-app-screen-share-extension";
+				PRODUCT_NAME = "RICOH Live Streaming Client Sample";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBFCBCBB2B049A5800EBEE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD8988F2B17188A003F18EF /* Config.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ios_app_screen_share_extension/ios_app_screen_share_extension.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "${inherited}";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ios_app_screen_share_extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "RICOH Live Streaming Client Screen Share Sample";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricoh.livestreaming.app.ios-app-screen-share.ios-app-screen-share-extension";
+				PRODUCT_NAME = "RICOH Live Streaming Client Sample";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE29C1829DFE88000D7AC59 /* Build configuration list for PBXProject "ios_app_screen_share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE29C2F29DFE88300D7AC59 /* Debug */,
+				EBE29C3029DFE88300D7AC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE29C3129DFE88300D7AC59 /* Build configuration list for PBXNativeTarget "ios_app_screen_share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE29C3229DFE88300D7AC59 /* Debug */,
+				EBE29C3329DFE88300D7AC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFCBCBC2B049A5800EBEE6F /* Build configuration list for PBXNativeTarget "ios_app_screen_share_extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFCBCBA2B049A5800EBEE6F /* Debug */,
+				EBFCBCBB2B049A5800EBEE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBE29C1529DFE88000D7AC59 /* Project object */;
+}
